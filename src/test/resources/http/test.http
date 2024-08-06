@@ -1,0 +1,22 @@
+# VSCode plugin
+# Id: humao.rest-client
+# Description: REST Client for Visual Studio Code
+# Version: 0.25.1
+# Publisher: Huachao Mao
+# VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+@appUrl = http://localhost:8080/
+
+### GET getUsers
+GET {{appUrl}}
+
+### POST createUser
+POST {{appUrl}}
+Content-Type: application/json
+
+{
+    "email": "test1@mail.ch",
+    "password": "********",
+    "role": "ADMIN"
+}
+
